@@ -1,0 +1,10 @@
+# display tab names in the status bar
+hardstatus alwayslastline
+hardstatus string '%{= dW} %= %{+b dW}%-w%{+b db}%n %t%{-}%+w %= %{-b} %c' # tab names in bold white and blue, time
+#hardstatus string '%{= dW} %= %{+b dW}%-w%{+b db}%n %t%{-}%+w %='   # tab names in bold white and blue
+
+# skip the startup message
+startup_message off
+
+# Change default scrollback value for new windows
+defscrollback 10000

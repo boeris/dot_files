@@ -1,0 +1,3 @@
+# Use vim key bidings for shell input
+set editing-mode vi
+set keymap vi-command
