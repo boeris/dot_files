@@ -1,10 +1,18 @@
 # display tab names in the status bar
 hardstatus alwayslastline
+
 hardstatus string '%{= dW} %= %{+b dW}%-w%{+b db}%n %t%{-}%+w %= %{-b} %c' # tab names in bold white and blue, time
 #hardstatus string '%{= dW} %= %{+b dW}%-w%{+b db}%n %t%{-}%+w %='   # tab names in bold white and blue
 
+#hardstatus string '%{= dk} %= %{+b dk}%-w%{+b dB}%n %t%{-}%+w %= %{-b} %c' # tab names in bold gray and blue, time
+#hardstatus string '%{= dk} %= %{+b dk}%-w%{+b dB}%n %t%{-}%+w %='   # tab names in bold gray and blue
+
 # skip the startup message
 startup_message off
+
+# Enable scrollback
+termcapinfo xterm* ti@:te@
+termcapinfo xterm* 'hs:ts=\E]2;:fs=07:ds=\E]2;screen07'
 
 # Change default scrollback value for new windows
 defscrollback 10000
