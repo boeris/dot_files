@@ -13,7 +13,7 @@
 
 # Include local config file, containing for example :
 # [user]
-# 	email = guilhemboeris@gmail.com
+# 	email = guilhem@gmail.com
 # 	name = Guilhem
 # Check the configuration with commands like
 #   git config --global --includes user.email
